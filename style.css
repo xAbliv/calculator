@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+
+body {
+  background-color: #f5f5f5;
+  font-family: "Work Sans", sans-serif;
+}
+
+.calculator {
+  width: 400px;
+  margin: auto;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#display {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 20px;
+  text-align: right;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-shadow: inset 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+.key {
+  font-size: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #e0e0e0;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.key:hover {
+  background-color: #d3d3d3;
+}
+
+.key:active {
+  box-shadow: none;
+  transform: translateY(2px);
+}
+
+.operation {
+  background-color: #ff9f1c;
+  color: #fff;
+}
+
+header {
+  text-align: center;
+  margin-top: 5%;
+}
+aside {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translate(0, -50%);
+}

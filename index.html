@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Four-Function Calculator</h1>
+      <p>
+        <small
+          >Meet the developer
+          <span onclick="reroute()" style="color: blue;"><u>here</u></span
+          >!</small
+        >
+      </p>
+    </header>
+    <div class="calculator">
+      <input type="text" id="display" disabled />
+      <div class="keys">
+        <button class="key" onclick="addValue('7')">7</button>
+        <button class="key" onclick="addValue('8')">8</button>
+        <button class="key" onclick="addValue('9')">9</button>
+        <button class="key" onclick="addValue('/')">/</button>
+        <button class="key" onclick="addValue('4')">4</button>
+        <button class="key" onclick="addValue('5')">5</button>
+        <button class="key" onclick="addValue('6')">6</button>
+        <button class="key" onclick="addValue('*')">*</button>
+        <button class="key" onclick="addValue('1')">1</button>
+        <button class="key" onclick="addValue('2')">2</button>
+        <button class="key" onclick="addValue('3')">3</button>
+        <button class="key" onclick="addValue('-')">-</button>
+        <button class="key" onclick="addValue('0')">0</button>
+        <button class="key" onclick="addValue('.')">.</button>
+        <button class="key" onclick="calculate()">=</button>
+        <button class="key" onclick="addValue('+')">+</button>
+        <button class="key" onclick="clearDisplay()">C</button>
+        <button class="key operation" onclick="squareRoot()">√</button>
+      </div>
+    </div>
+    <aside>
+      <h3>Calculator Functions</h3>
+      <p><b>/</b> = Divide</p>
+      <p><b>*</b> = Multiply</p>
+      <p><b>-</b> = Subtract</p>
+      <p><b>+</b> = Add</p>
+      <p><b>√</b> = Square Root</p>
+    </aside>
+    <script src="./script.js"></script>
+  </body>
+</html>
